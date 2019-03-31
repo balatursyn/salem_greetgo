@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>greetgo!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <script>
+        $(document).ready(function () {
+
+            ajaxResponse();
+
+        });
+
+        function ajaxResponse() {
+            $.ajax({
+                url: 'response.html', success: function (data) {
+                    $('#result').html(data);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align="center">
+        <div class="alert alert-info" id="result"></div>
+    </h1>
+</body>
+</html>

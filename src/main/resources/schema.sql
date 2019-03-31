@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS info;
+
+CREATE TABLE info (
+	id INT,
+	text TEXT,
+	PRIMARY KEY (ID)
+);
